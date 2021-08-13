@@ -103,7 +103,6 @@ h6 {
 }
 
 .menu-container li {
-    padding: 0 1rem;
     list-style: none;
 }
 
@@ -112,5 +111,23 @@ h6 {
     padding: 2rem;
     font-size: 1.8rem;
     text-decoration: none;
-    color: var(--primary-color)
+    color: var(--primary-color);
+    position:relative;
 }
+
+.menu-container li a::after {
+    content:'';
+    bottom:1rem;
+    position: absolute;
+    left: 50%;
+    width: 0;
+    height: 0.2rem;
+    background: crimson;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-container li a:hover::after {
+    width: 50%;
+    left: 25%
+}
+
