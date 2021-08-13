@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+   --primary-color: #0A1128;
+   --white-color: #fff; 
+   --gap: 3rem;
+   --font-normal: 2.3rem;
+   --light-gray: #eee;
+}
+
+*{
+    margin: 0rem;
+    border: 0rem;
+    padding:0rem;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 6rem;
+}
+h2 {
+    font-size: 5.5rem;
+}
+h3 {
+    font-size: 5rem;
+}
+h4 {
+    font-size: 4.5rem;
+}
+h5 {
+    font-size: 4rem;
+}
+h6 {
+    font-size: 3.5rem;
+}
+
+.svg-bg {
+    /* Background created by https://www.svgbackgrounds.com/ */
+    background-image: url(../img/Confetti-Doodles.svg);
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.white-bg {
+    background-color: var(--white-color);
+    background-size: cover;
+    background-position: center center;
+    color: var(--primary-color)
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--gap)
+}
+
+.section {
+    min-height: 100vh;
+}
+
+/* Menu */
+
+.logo {
+    text-transform: uppercase;
+    margin: 0;
+    font-size: var(--font-normal);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.menu-container > h1 a {
+    font-size: 2.3rem;
+}
+
+.menu-container li {
+    padding: 0 1rem;
+    list-style: none;
+}
+
+.menu-container a {
+    display: block;
+    padding: 2rem;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--primary-color)
+}
