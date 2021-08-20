@@ -22,3 +22,7 @@
 .section {
     min-height: 100vh;
 }
+
+.section-head {
+    margin-bottom: var(--larger-padding);
+}
