@@ -17,43 +17,43 @@
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 
  *{
-     margin: 0rem;
-     border: 0rem;
-     padding: 0rem;
+    margin: 0rem;
+    border: 0rem;
+    padding: 0rem;
  }
  
  html {
-     font-size: 62.5%;
-     scroll-behavior: smooth;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
  }
  
  body {
-     font-size: 2rem;
-     font-family: 'Open Sans', sans-serif;
+    font-size: 2rem;
+    font-family: 'Open Sans', sans-serif;
  }
  
  h1, h2, h3, h4, h5, h6 {
-     font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
  }
  
  h1 {
      font-size: 6rem;
  }
  h2 {
-     font-size: 5.5rem;
-     font-family: var(--font-family);
+    font-size: 5.5rem;
+    font-family: var(--font-family);
  }
  h3 {
-     font-size: 5rem;
+    font-size: 5rem;
  }
  h4 {
-     font-size: 4.5rem;
+    font-size: 4.5rem;
  }
  h5 {
-     font-size: 4rem;
+    font-size: 4rem;
  }
  h6 {
-     font-size: 3.5rem;
+    font-size: 3.5rem;
  }
  
 /* classes */
@@ -87,6 +87,9 @@
     margin-bottom: var(--larger-padding);
 }
 
+.center-content {
+    padding: 4rem 0;
+}
 /* Menu */
 
 .logo {
@@ -197,19 +200,43 @@
     gap: var(--gap);
 }
 
-.art1 h2::before {
+#top-3 article h3 {
+    font-size: 3rem;
+}
+
+#top-3 article p {
+    padding-top: var(--gap);
+}
+
+
+
+.art1 h3::before {
     content: '1';
-    position: absolute;
-    font-size: 8rem;
-    left: -7rem;
+    display: block;
+    float:left;
+    margin-right: var(--small-padding);
     transform: rotate(5deg);
     font-style: italic;
+    font-size: 5rem;
 }
 
-.art2 h2::before {
+
+.art2 h3::before {
     content: '2';
+    display: block;
+    float:left;
+    margin-right: var(--small-padding);
+    transform: rotate(5deg);
+    font-style: italic;
+    font-size: 5rem;
 }
 
-.art3 h2::before {
+.art3 h3::before {
     content: '3';
+    display: block;
+    float:left;
+    margin-right: var(--small-padding);
+    transform: rotate(5deg);
+    font-style: italic;
+    font-size: 5rem;
 }
