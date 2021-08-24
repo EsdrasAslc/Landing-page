@@ -200,11 +200,11 @@
     gap: var(--gap);
 }
 
-#top-3 article h3 {
+#top-3 article h3, #work article h3 {
     font-size: 3rem;
 }
 
-#top-3 article p {
+#top-3 article p, #work article p {
     padding-top: var(--gap);
 }
 
