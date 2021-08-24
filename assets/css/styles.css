@@ -208,8 +208,6 @@
     padding-top: var(--gap);
 }
 
-
-
 .art1 h3::before {
     content: '1';
     display: block;
@@ -272,4 +270,48 @@
     max-width: 36rem;
     max-height: 36rem; 
     overflow: hidden;
+}
+
+/* pricing */
+
+.text-container {
+    text-align: center;
+    max-width: 64rem;
+}
+
+.text-container h2 {
+    margin: 0 0 5rem;
+}
+
+.text-container p {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0 0 3rem;
+}
+
+.tabela {
+    overflow-x: auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 600px;
+}
+
+table caption {
+    font-size: 1.8rem;
+    font-style: italic;
+    caption-side: top;
+    margin: 1rem 0;
+    text-align: left;
+}
+table td, table th {
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    text-align: left;
+}
+
+table th {
+    background: #eee;
 }
