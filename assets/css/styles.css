@@ -240,3 +240,36 @@
     font-style: italic;
     font-size: 5rem;
 }
+
+/* GALERIA */
+
+#gallery h2 {
+    padding: 4rem 0 1rem 0;
+}
+ #gallery p {
+    padding: 0 0 5rem;
+ }
+
+#gallery article {
+    padding-bottom: var(--larger-padding);
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--gap);
+}
+
+.grid-gallery .img {
+    transition: all 300ms ease-in-out
+}
+
+.grid-gallery .img:hover {
+    transform: scale(1.2) rotate(4deg) translate(-3%, 3%);
+}
+
+.grid-gallery div {
+    max-width: 36rem;
+    max-height: 36rem; 
+    overflow: hidden;
+}
