@@ -380,3 +380,20 @@ form p label {
     background-color: #fff ;
     color: #000;
 }
+
+/* footer */
+
+.center {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 5rem 3rem;
+    font-family: var(--font-family);
+}
+
+.heart {
+    color:crimson
+}
+footer a {
+    color:black;
+    text-decoration: none;
+}
