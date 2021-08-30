@@ -306,8 +306,12 @@ table th {
     flex-direction: row;
     justify-content: center;
     align-content: center;
-    gap:2rem;
+    gap:5rem;
     margin:auto;
+}
+
+.imagem-contact {
+    max-width: 55rem;
 }
 
 .contact-flex article h2 {
@@ -392,4 +396,59 @@ form p label {
 footer a {
     color:black;
     text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .main-content {
+        margin:auto;
+        padding: 2rem;
+    }
+
+    /* GRID */
+
+    .grid-top3{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:3rem;
+    }
+    
+    /* GALLERY */
+
+    .grid-gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--gap);
+    }
+    
+    /* CONTACT */
+
+    .contact-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap:5rem;
+        margin:auto;
+    }    
+
+    .imagem-contact {
+        max-width: 55rem;
+    }
+
+    .form-grid {
+        display: flex;
+        flex-direction: column;   
+    }
+    
+    #name, #last-name, #email, #textarea {
+        padding: 1.5rem 1rem;
+        font-size: 3rem;
+        color: var(--primary-color);
+        width: 90%;
+    } 
+
 }
