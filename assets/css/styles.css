@@ -73,23 +73,16 @@
     color: var(--primary-color)
 }
 
-.main-content {
-    max-width: 120rem;
-    margin: 0 auto;
-    padding: var(--gap)
-}
-
 .section {
     min-height: 100vh;
 }
 
-.section-head {
-    margin-bottom: var(--larger-padding);
+.main-content {
+    max-width: 120rem;
+    margin:auto;
 }
 
-.center-content {
-    padding: 4rem 0;
-}
+
 /* Menu */
 
 .logo {
@@ -151,21 +144,29 @@
 
 /* main - inicio */
 
-.section-container {
+#logo {
+padding-top: 6rem ;
+}
+
+.logo-flex {
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 5rem;
 }
 
-.main-article {
-    padding: 2rem;
-}
-
-.main-article h2 {
-    padding-bottom: var(--gap);
+.logo-flex article {
+    display: inherit;
+    max-width: 55rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
 }
 
 .imagem-js {
-    max-width: 50%;
+    max-width: 55rem;
 }
 
 /* intro */
