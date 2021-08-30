@@ -184,56 +184,43 @@ padding-top: 6rem ;
 
 /* top 3 jobs */
 
-.section-container2 p {
-    text-align: center;
-    margin-bottom: 3rem;
+.flex-top3{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 100vh;
+    gap: 10rem;
 }
 
-.grid-container {
+.flex-top3 div h2 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+
+.grid-top3{
     display: grid;
-    grid: auto-flow / 1fr 1fr 1fr;
-    gap: var(--gap);
+    grid-template-columns: repeat(3, 1fr);
+    gap:3rem;
+    counter-reset: gridtop3;
 }
 
-#top-3 article h3, #work article h3 {
+.grid-top3 h3 {
     font-size: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 4rem;
+    position: relative;
 }
 
-#top-3 article p, #work article p {
-    padding-top: var(--gap);
-}
-
-.art1 h3::before {
-    content: '1';
-    display: block;
-    float:left;
-    margin-right: var(--small-padding);
-    transform: rotate(5deg);
-    font-style: italic;
+.grid-top3 h3::before {
+    counter-increment: gridtop3;
+    content: counter(gridtop3);
+    position: absolute;
     font-size: 5rem;
-}
-
-
-.art2 h3::before {
-    content: '2';
-    display: block;
-    float:left;
-    margin-right: var(--small-padding);
-    transform: rotate(5deg);
     font-style: italic;
-    font-size: 5rem;
-}
-
-.art3 h3::before {
-    content: '3';
-    display: block;
-    float:left;
-    margin-right: var(--small-padding);
+    top: -1.5rem;
+    left: 0;
     transform: rotate(5deg);
-    font-style: italic;
-    font-size: 5rem;
 }
-
 /* GALERIA */
 
 #gallery h2 {
