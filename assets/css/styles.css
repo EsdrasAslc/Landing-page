@@ -80,6 +80,7 @@
 .main-content {
     max-width: 120rem;
     margin:auto;
+    padding: 8rem;
 }
 
 
@@ -188,7 +189,7 @@ padding-top: 6rem ;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     gap: 10rem;
 }
 
