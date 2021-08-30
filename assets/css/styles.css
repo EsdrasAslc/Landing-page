@@ -408,6 +408,12 @@ footer a {
         padding: 2rem;
     }
 
+    /* LOGO */
+
+    #logo {
+        padding-top: 2rem;
+    }
+
     /* GRID */
 
     .grid-top3{
